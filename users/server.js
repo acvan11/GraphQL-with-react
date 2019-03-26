@@ -7,8 +7,8 @@ const app = express();
 app.use('/graphql', expressGraphQL({
 	schema, // schema: schema  because ES6
 	graphiql: true
-}))
+}));
 
 app.listen(4000, () => {
 	console.log('Listening');
-})
+});
